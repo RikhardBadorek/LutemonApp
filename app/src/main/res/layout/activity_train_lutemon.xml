@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trainLutemonActivity">
+
+    <Button
+        android:id="@+id/btnSwitchToListLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchToListLutemons"
+        android:text="Tallenna muutokset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+    <ImageView
+        android:id="@+id/ivSelectedLutemon"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_android_white_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="126dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSelectedLutemon"
+        app:srcCompat="@drawable/curry_yache_berry_sprite" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="203dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Syötä lutemonille marja joka parantaa sen elämäpisteitä"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSelectedLutemon" />
+
+    <Button
+        android:id="@+id/btnEatBerryBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="120dp"
+        android:onClick="improveHealth"
+        android:text="Syö"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="194dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="Taisteluta lutemonia ja kehitä sen hyökkäystä"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/btnEatBerryBlue" />
+
+    <Button
+        android:id="@+id/btnTrainAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:onClick="improveAttack"
+        android:text="Taisteluta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="108dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/images" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="204dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Harjoittele iskujen vastaanottoa ja kehitä puolustusta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTrainAttack" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:onClick="improveDefense"
+        android:text="Puolustus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

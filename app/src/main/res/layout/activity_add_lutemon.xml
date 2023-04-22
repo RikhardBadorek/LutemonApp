@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLutemon">
+
+    <RadioGroup
+        android:id="@+id/rgLutemonColor"
+        android:layout_width="127dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/rbWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valkoinen" />
+
+        <RadioButton
+            android:id="@+id/rbBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Musta" />
+
+        <RadioButton
+            android:id="@+id/rbPink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pinkki" />
+
+        <RadioButton
+            android:id="@+id/rbOrange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oranssi" />
+
+        <RadioButton
+            android:id="@+id/rbGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vihreä" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rakenna Lutemonisi"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="väri"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnAddNewLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="addLutemon"
+        android:text="Lisää Lutemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nimi"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgLutemonColor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

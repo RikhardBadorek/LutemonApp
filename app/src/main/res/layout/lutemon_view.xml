@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginTop="10dp"
+    android:background="#CBEDFB"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivLutemonPicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLutemonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nimi"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvLutemonAttack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hyökkäys" />
+
+        <TextView
+            android:id="@+id/tvLutemonDefense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Puolustus" />
+
+        <TextView
+            android:id="@+id/tvLutemonMaxHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maksimi elämäpisteet" />
+
+        <TextView
+            android:id="@+id/tvLutemonExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kokemus" />
+
+        <TextView
+            android:id="@+id/tvTrainLutemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Valitse lutemon"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:id="@+id/imgRemove"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/baseline_delete_forever_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbSelectLutemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgRemove" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
