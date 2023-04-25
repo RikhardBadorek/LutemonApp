@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D67070"
+    android:backgroundTint="#CC7171"
     tools:context=".trainLutemonActivity">
 
     <Button
         android:id="@+id/btnSwitchToListLutemons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#0E0A0A"
         android:onClick="switchToListLutemons"
         android:text="Tallenna muutokset"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +25,7 @@
         android:id="@+id/ivSelectedLutemon"
         android:layout_width="99dp"
         android:layout_height="99dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,7 +35,7 @@
         android:id="@+id/imageView2"
         android:layout_width="126dp"
         android:layout_height="116dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="38dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivSelectedLutemon"
@@ -43,7 +46,7 @@
         android:layout_width="203dp"
         android:layout_height="33dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="54dp"
         android:text="Syötä lutemonille marja joka parantaa sen elämäpisteitä"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivSelectedLutemon" />
@@ -52,19 +55,24 @@
         android:id="@+id/btnEatBerryBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="120dp"
+        android:backgroundTint="#120D0D"
         android:onClick="improveHealth"
         android:text="Syö"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="40dp"
+        android:background="#D67070"
+        android:backgroundTint="#E37D7D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/download" />
@@ -85,6 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="#120E0E"
         android:onClick="improveAttack"
         android:text="Taisteluta"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,8 +124,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:backgroundTint="#0C0909"
         android:onClick="improveDefense"
         android:text="Puolustus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/tvLutemonInTrainingName"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#100B0B"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSelectedLutemon" />
 </androidx.constraintlayout.widget.ConstraintLayout>

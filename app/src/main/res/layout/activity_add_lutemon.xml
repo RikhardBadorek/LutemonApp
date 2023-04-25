@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D67070"
+    android:backgroundTint="#CC7171"
     tools:context=".AddLutemon">
 
     <RadioGroup
@@ -52,6 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Rakenna Lutemonisi"
+        android:textColor="#100B0B"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="väri"
+        android:textColor="#0C0808"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,6 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#0E0A0A"
         android:onClick="addLutemon"
         android:text="Lisää Lutemon"
         app:layout_constraintEnd_toEndOf="parent"

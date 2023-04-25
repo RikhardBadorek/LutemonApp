@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="700dp"
+    android:background="#D67070"
+    android:backgroundTint="#CC7171"
     tools:context=".ListLutemonsActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvLutemonList"
         android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_height="550dp"
         android:layout_marginTop="95dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
@@ -21,30 +24,55 @@
         android:layout_marginTop="8dp"
         android:text="Taistele tai kouluta"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="#0C0909"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnFight"
+        android:id="@+id/btnSwitchToStats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Taistele"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:onClick="switchToLutemonStats"
+        android:text="Tilastot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.319"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btnTrainLutemon"
+        android:id="@+id/btnTrainLutemon2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="155dp"
+        android:backgroundTint="@color/black"
         android:onClick="switchToTrainLutemons"
         android:text="Kouluta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
-        app:layout_constraintStart_toEndOf="@+id/btnFight"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnFightLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="284dp"
+        android:backgroundTint="@color/black"
+        android:onClick="switchToFightLutemons"
+        android:text="Taistele"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnReturnToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0C0909"
+        android:onClick="switchToMain"
+        android:text="Palaa alku valikkoon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvLutemonList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

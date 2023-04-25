@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D67070"
+    android:backgroundTint="#CC7171"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnAddLutemon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0B0909"
         android:onClick="switchToAddLutemon"
         android:text="Lisää Lutemon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,11 +25,39 @@
         android:id="@+id/btnListLutemons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#100D0D"
         android:onClick="switchToListLutemons"
         android:text="Listaa Lutemonit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddLutemon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddLutemon"
         app:layout_constraintTop_toBottomOf="@+id/btnAddLutemon" />
+
+    <Button
+        android:id="@+id/btnSaveLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#130F0F"
+        android:onClick="saveToMemory"
+        android:text="Tallenna lutemonit muistiin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListLutemons" />
+
+    <Button
+        android:id="@+id/btnLoadLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#100B0B"
+        android:onClick="loadFromMemory"
+        android:text="Lataa Lutemonit muistista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveLutemons" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
