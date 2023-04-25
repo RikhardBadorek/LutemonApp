@@ -23,23 +23,23 @@ public class AddLutemon extends AppCompatActivity {
 
         switch (rgLutemonColor.getCheckedRadioButtonId()) {
             case R.id.rbWhite:
-                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Valkoinen", 5, 4, 20, 20, 0));
+                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Valkoinen", 5, 4, 20, 20, 0, 0, 0, 0));
                 break;
 
             case R.id.rbBlack:
-                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Musta", 9, 0, 16, 16, 0));
+                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Musta", 9, 0, 16, 16, 0, 0, 0, 0));
                 break;
 
             case R.id.rbPink:
-                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Pinkki", 7, 2, 18, 18, 0));
+                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Pinkki", 7, 2, 18, 18, 0, 0, 0, 0));
                 break;
 
             case R.id.rbGreen:
-                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Vihreä", 6, 3, 19, 19, 0));
+                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Vihreä", 6, 3, 19, 19, 0, 0, 0, 0));
                 break;
 
             case R.id.rbOrange:
-                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Oranssi", 8, 1, 17, 17, 0));
+                Storage.getInstance().addLutemon(new Lutemon(lutemonName.getText().toString(), "Oranssi", 8, 1, 17, 17, 0, 0, 0, 0));
                 break;
 
         }

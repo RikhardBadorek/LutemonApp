@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D67070"
+    android:backgroundTint="#CC7171"
+    tools:context=".FightActivity">
+
+    <Button
+        android:id="@+id/btnStartFightLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="Aloita taistelu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLog"
+        android:layout_width="389dp"
+        android:layout_height="383dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartFightLog">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnReturnToListAfterFight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="returnToListLutemonsAfterFigth"
+        android:text="Palaa lutemon listaan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLog" />
+
+    <ImageView
+        android:id="@+id/ivFirstLutemonFighter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_android_white_24dp" />
+
+    <ImageView
+        android:id="@+id/ivSecondLutemonFighter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_android_white_24dp" />
+
+    <TextView
+        android:id="@+id/tvFirstFighter"
+        android:layout_width="138dp"
+        android:layout_height="47dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#0B0808"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivFirstLutemonFighter"
+        app:layout_constraintStart_toStartOf="@+id/ivFirstLutemonFighter"
+        app:layout_constraintTop_toBottomOf="@+id/ivFirstLutemonFighter" />
+
+    <TextView
+        android:id="@+id/tvSecondFighter"
+        android:layout_width="135dp"
+        android:layout_height="44dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#151010"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivSecondLutemonFighter"
+        app:layout_constraintStart_toStartOf="@+id/ivSecondLutemonFighter"
+        app:layout_constraintTop_toBottomOf="@+id/ivSecondLutemonFighter" />
+</androidx.constraintlayout.widget.ConstraintLayout>
