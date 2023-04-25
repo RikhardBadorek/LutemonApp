@@ -2,7 +2,9 @@ package com.badorek.luemon_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -44,5 +46,11 @@ public class StatsActivity extends AppCompatActivity {
         int trainingDays = lutemon1.getTrainingDays();
         TextView textView5 = findViewById(R.id.tvStatsTrainingDays);
         textView5.setText("Koulutus päivät: " + trainingDays);
+    }
+
+    public void returnToListLutemonsStats(View view) {
+        storage.removeSelectedLutemons();
+        Intent intent = new Intent(this, ListLutemonsActivity.class);
+        startActivity(intent);
     }
 }
